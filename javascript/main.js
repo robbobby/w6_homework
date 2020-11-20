@@ -11,7 +11,7 @@ const handleTaskSubmitButtonClicked = function(event) { event.preventDefault()
     const duration = document.createElement('p');
 
     const newList = document.createElement('newList')
-    // appendChildren()
+    appendChildren(document.querySelector('#task-list'), [name, description, duration])
 
     name.textContent        = this.name.value;
     description.textContent = this.description.value;
@@ -19,6 +19,6 @@ const handleTaskSubmitButtonClicked = function(event) { event.preventDefault()
     document.querySelector('#task-list').appendChild(newList)
 }
 
-const appendChildren = function(node, listOfItems) {
-    listOfItems.forEach(item => node.appendChild(item))
+const appendChildren = function(element, listOfItems) {
+    listOfItems.forEach(item => element.appendChild(item))
 }
