@@ -6,18 +6,36 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
     <script src="../javascript/main.js"></script>
 </head>
 <body>
 <form id="task-form">
-    <label for="name">Task Name:</label>
-    <input type="text" id="name">
-    <label for="description">Description: </label>
-    <input type="text" id="description">
-    <label for="duration">Start Date</label>
-    <input type="date" id="duration">
-    <button type="submit" id="task-submit-button">Hello</button>
+    <div class="task-form green">
+        <div class="form-item">
+            <label for="name">Task Name:</label>
+            <div>
+                <input type="text" id="name" class="blue">
+            </div>
+        </div>
+        <div class="form-item">
+            <label for="description">Description: </label>
+            <div>
+                <input type="text" id="description" class="blue">
+            </div>
+        </div>
+        <div class="form-item">
+            <label for="duration">Start Date</label>
+            <div>
+                <input type="date" id="duration" class="blue">
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="submit" id="task-submit-button" class="all-buttons">Hello</button>
+    </div>
 </form>
+<button id="remove-all-tasks" class="all-buttons">Remove All</button>
 <ul id="task-list"></ul>
 
 </body>
